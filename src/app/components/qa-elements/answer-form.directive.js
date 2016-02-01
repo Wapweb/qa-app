@@ -45,7 +45,7 @@
                 }
 
                 function clearFormModel(model) {
-                    model.question_message = '';
+                    model.answer_message = '';
                     model.user_name = '';
                 }
             }
