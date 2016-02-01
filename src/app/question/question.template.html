@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12">
+        <question question="vm.question" show-details-buttons="false"></question>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Answers</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h5 ng-if="!vm.answers">Loading answers...</h5>
+        <answers items="vm.answers"></answers>
+        <div ng-if="vm.answers && vm.answers.length == 0">There are no answers</div>
+    </div>
+</div>
+
+<answer-form question="vm.question" on-added="vm.addAnswer(item)"></answer-form>

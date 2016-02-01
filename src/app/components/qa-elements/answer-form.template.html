@@ -1,0 +1,32 @@
+<div class="row main-content">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Add answer
+            </div>
+            <div class="panel-body">
+                <form name="answerForm" id="answerForm" ng-submit="vm.addAnswer(answerForm.$valid)">
+                    <div class="form-group">
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="user_name"
+                                ng-model="vm.answer.user_name"
+                                placeholder="User Name"
+                                required>
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                                class="form-control"
+                                id="answer_message"
+                                ng-model="vm.answer.answer_message"
+                                placeholder="Answer"
+                                required>
+                        </textarea>
+                    </div>
+                    <button class="btn btn-success" type="submit">Answer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

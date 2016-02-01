@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>QA app</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-pills" role="tablist">
+                <li role="presentation" ui-sref-active="active"><a ui-sref="home({type:null})">All questions</a></li>
+                <li role="presentation" ui-sref-active="active"><a ui-sref="home({type:'unanswered'})">Unanswered questions</a></li>
+                <li role="presentation" ui-sref-active="active"><a ui-sref="home({type:'answered'})">Answered questions</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="container main-content">
+    <div ui-view></div>
+</div>
+

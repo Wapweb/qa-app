@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="clearfix">
+            <div class="pull-left">
+                <div>{{::vm.question.user_name}}</div>
+            </div>
+            <div class="pull-right">
+                {{::vm.question.question_creation_time}}
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        {{::vm.question.question_message}}
+    </div>
+    <div class="panel-footer" ng-if="vm.showDetailsButton">
+        <button class="btn btn-default" type="button" ui-sref="question({id:vm.question.question_id})">Details</button>
+    </div>
+</div>
